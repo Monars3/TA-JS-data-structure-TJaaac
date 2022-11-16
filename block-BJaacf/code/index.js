@@ -11,7 +11,7 @@ console.log(sum/numbers.length);
 // 4. Find the highest number in the array and print it to the console using console.log()
 let highestNumber = numbers[0];
 for(let i=0; i<number.length; i++){
-    if(highestNumber>numbers[i]){
+    if(highestNumber<numbers[i]){
         highestNumber=numbers[i];
     }
 }
@@ -19,7 +19,7 @@ console.log(highestNumber);
 // 5. Find the lowest number in the array and print it to the console using console.log()
 let lowestNumber = numbers[0];
 for (let i=0; i<numbers.length; i++){
-    if (lowestNumber<numbers[i]){
+    if (lowestNumber>numbers[i]){
         lowestNumber = numbers[i];
     }
 }
@@ -53,4 +53,8 @@ for(i=0; i<numbers.length; i++){
     console.log(numbers[i])
 }
 // 10. Find all the number in the array that is divisible by 3
-let divisibleBythree = [];
+for (let number of numbers) {
+    if (number % 3 == 0){
+        console.log(number, "divisible by 3");
+    }
+}
