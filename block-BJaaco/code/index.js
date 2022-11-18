@@ -109,7 +109,7 @@ function clear(arr) {
   let repeat =[];
   for (let value of arr){
     if (!isUnwanted(value)){
-      repeat.push;
+      repeat.push(value);
     }
     return repeat;
   }
@@ -135,9 +135,9 @@ function clear(arr) {
 */
 
 function arrayToObj(input) {
-  let output = [];
+  let output = {};
   for (let i=0; i<input.length; i++){
-    output.push(input[i]);
+    output[i] = input[i];
   }
   return output;
 }
